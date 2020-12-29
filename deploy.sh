@@ -18,5 +18,3 @@ kubectl set image deployments/server-deployment server-deployment server=kalanch
 kubectl set image deployments/client-deployment client-deployment client=kalanchan/multi-client:$SHA
 
 kubectl set image deployments/worker-deployment worker-deployment worker=kalanchan/multi-worker:$SHA
-
-#hello1
