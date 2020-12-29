@@ -13,8 +13,8 @@ docker push kalanchan/multi-worker:$SHA
 
 kubectl apply -f k8s
 
-kubectl set image deployments/server-deployment server-deployment server=kalanchan/multi-server:$SHA
+kubectl set image deployments/server-deployment server=kalanchan/multi-server:$SHA
 
-kubectl set image deployments/client-deployment client-deployment client=kalanchan/multi-client:$SHA
+kubectl set image deployments/client-deployment client=kalanchan/multi-client:$SHA
 
-kubectl set image deployments/worker-deployment worker-deployment worker=kalanchan/multi-worker:$SHA
+kubectl set image deployments/worker-deployment worker=kalanchan/multi-worker:$SHA
